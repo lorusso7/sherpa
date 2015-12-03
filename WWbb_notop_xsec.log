@@ -1,0 +1,1546 @@
+==> using COND/Services/RelationalAuthenticationService for auth, sys 1
+==> using COND/Services/RelationalAuthenticationService for auth, sys 1
+SherpackFetcher: Sherpack found
+SherpackFetcher: Calculated checksum of the Sherpack is aa5a3c98e59d73dce65da007f7633f73 and matches
+SherpackFetcher: Trying to unzip the Sherpack
+SherpackFetcher: Decompressing successful 
+SherpackFetcher: Decompressed Sherpack exists with name sherpa_WWbb_notopLO_MASTER.tar starting to untar it
+Extracting from ./
+ Extracting dir Process/
+ Extracting file Process/Comix.db
+ Extracting dir Result/
+ Extracting file Result.db
+ Extracting file Run.dat
+End of ./
+Write Sherpa parameter set Run to Run.dat 
+Store assigned reference of the randomEngine
+Welcome to Sherpa, Lorenzo Russo. Initialization of framework underway.
+The local time is Mon Nov 30 14:34:28 2015.
+Run_Parameter::Init(): Setting memory limit to 15.2353 GB.
+Random::SetSeed(): Seed set to 1234
+Use stored reference for the external RNG
+Random::InitExternal(): Initialized external RNG 'CMS_SHERPA_RNG'.
+-----------------------------------------------------------------------------
+-----------    Event generation run with SHERPA started .......   -----------
+-----------------------------------------------------------------------------
+................................................ |       +                   
+................................................ ||  |       +  +            
+...................................        ....  | |         /   +           
+................. ................   _,_ |  ....  ||         +|  +  +        
+...............................  __.'  ,\|  ...  ||    /    +|          +    
+.............................. (  \    \   ...  | |  |   + + \         +   
+.............................  (    \   -/  .... ||       +    |          +  
+........ ...................  <S   /()))))~~~~~~~~##     +     /\    +       
+............................ (!H   (~~)))))~~~~~~#/     +  +    |  +         
+................ ........... (!E   (~~~)))))     /|/    +         +          
+............................ (!R   (~~~)))))   |||   + +            +        
+..... ...................... (!P    (~~~~)))   /|  + +          +            
+............................ (!A>    (~~~~~~~~~##        + +        +        
+............................. ~~(!    '~~~~~~~ \       +     + +      +      
+...............................  `~~~QQQQQDb //   |         + + +        +   
+........................ ..........   IDDDDP||     \  + + + + +             +
+....................................  IDDDI||       \                      + 
+.................................... IHD HD||         \ + +  + + + + +      +
+...................................  IHD ##|            :-) + +\          +  
+......... ............... ......... IHI ## /      /   +  + + + +\       +    
+................................... IHI/ /       /      + + + +        +     
+................................... ## | | /    / + +      + + /      +      
+....................... /TT\ .....  ##/ ///  / + + + + + + +/       +        
+......................./TTT/T\ ... /TT\/\\\ / + + + + + + +/   \         +   
+....................../TTT/TTTT\...|TT/T\\\/   +    ++  + /              
+-----------------------------------------------------------------------------
+
+     SHERPA version 2.1.1 (Broad Peak)
+                                                                             
+     Authors:        Stefan Hoeche, Frank Krauss, Silvan Kuttimalai,         
+                     Marek Schoenherr, Steffen Schumann, Frank Siegert,      
+                     Korinna Zapp.
+     Former Authors: Timo Fischer, Tanju Gleisberg, Hendrik Hoeth,           
+                     Ralf Kuhn, Thomas Laubrich, Andreas Schaelicke,         
+                     Jan Winter                                              
+                                                                             
+     This program uses a lot of genuine and original research work           
+     by other people. Users are encouraged to refer to                       
+     the various original publications.                                      
+                                                                             
+     Users are kindly asked to refer to the documentation                    
+     published under JHEP 02(2009)007                                        
+                                                                             
+     Please visit also our homepage                                          
+                                                                             
+       http://www.sherpa-mc.de                                               
+                                                                             
+     for news, bugreports, updates and new releases.                         
+                                                                             
+-----------------------------------------------------------------------------
+
+SVN branch branches/rel-2-1-1, revision 24084.
+
+ List of Particle Data 
+      IDName       kfc   MASS[<kfc>]    WIDTH[<kfc>]   STABLE[<kfc>]  MASSIVE[<kfc>]  ACTIVE[<kfc>]
+           d         1          0.01               0               1               0              1
+           u         2         0.005               0               1               0              1
+           s         3           0.2               0               1               0              1
+           c         4          1.42               0               1               0              1
+           b         5           4.6               0               1               1              1
+           t         6         172.6             1.5               1               1              0
+          e-        11      0.000511               0               1               0              1
+        nu_e        12             0               0               1               0              1
+         mu-        13         0.105               0               1               0              1
+       nu_mu        14             0               0               1               0              1
+        tau-        15         1.777        2.36e-12               0               0              1
+      nu_tau        16             0               0               1               0              1
+           G        21             0               0               1               0              1
+           P        22             0               0               1               0              1
+           Z        23        91.188            2.49               1               1              1
+          W+        24        80.419            2.06               0               1              1
+          h0        25           125         0.00407               1               1              1
+
+ List of Particle Containers 
+    IDName     kfc     Constituents
+    lepton      90     {e-,e+,mu-,mu+,tau-,tau+}
+  neutrino      91     {nu_e,nu_eb,nu_mu,nu_mub,nu_tau,nu_taub}
+   fermion      92     {d,db,u,ub,s,sb,c,cb,e-,e+,mu-,mu+,tau-,tau+,nu_e,nu_eb,nu_mu,nu_mub,nu_tau,nu_taub}
+         j      93     {d,db,u,ub,s,sb,c,cb,G}
+         Q      94     {d,db,u,ub,s,sb,c,cb}
+        bj      97     {bj}
+         r      99     {d,db,u,ub,s,sb,c,cb,G}
+
+Initialized the beams Monochromatic*Monochromatic
+PDF set 'ct10' loaded for beam 1 (P+).
+PDF set 'ct10' loaded for beam 2 (P+).
+Initialized the ISR: (SF)*(SF)
+Initialize the Standard Model from  / Run.dat|(model){|}(model)
+One_Running_AlphaS::One_Running_AlphaS() {
+  Setting \alpha_s according to PDF
+  perturbative order 1
+  \alpha_s(M_Z) = 0.118
+}
+One_Running_AlphaS::One_Running_AlphaS() {
+  Setting \alpha_s according to PDF
+  perturbative order 1
+  \alpha_s(M_Z) = 0.118
+}
+Hadron_Init::Init(): Initializing kf table for hadrons.
+All_Hadron_Multiplets::ConstructBaryonWaveFunction did not find a combination for [2 1 4], spin = 2
+All_Hadron_Multiplets::ConstructBaryonWaveFunction did not find a combination for [2 1 4], spin = 4
+Initialized the Fragmentation_Handler.
+Initialized the Soft_Collision_Handler.
+CS_Shower::CS_Shower(): Set respect Q2 mode 0
+CS_Shower::CS_Shower(): Set respect Q2 mode 0
+Initialized the Shower_Handler.
+ME_Generator_Base::SetPSMasses(): Massive PS flavours for Comix: (c,cb,b,bb,e-,e+,nu_e,nu_eb,mu-,mu+,nu_mu,nu_mub,tau-,tau+,nu_tau,nu_taub,Z,W+,W-,h0)
++----------------------------------+
+|                                  |
+|      [31mCCC[0m  [32mOOO[0m  [34mM[0m   [34mM[0m I [33mX[0m   [33mX[0m     |
+|     [31mC[0m    [32mO[0m   [32mO[0m [34mMM[0m [34mMM[0m I  [33mX[0m [33mX[0m      |
+|     [31mC[0m    [32mO[0m   [32mO[0m [34mM[0m [34mM[0m [34mM[0m I   [33mX[0m       |
+|     [31mC[0m    [32mO[0m   [32mO[0m [34mM[0m   [34mM[0m I  [33mX[0m [33mX[0m      |
+|      [31mCCC[0m  [32mOOO[0m  [34mM[0m   [34mM[0m I [33mX[0m   [33mX[0m     |
+|                                  |
++==================================+
+|  Color dressed  Matrix Elements  |
+|     http://comix.freacafe.de     |
+|   please cite  JHEP12(2008)039   |
++----------------------------------+
+Matrix_Element_Handler::BuildProcesses(): Looking for processes .................. done ( 319 MB, 0s / 0s ).
+Matrix_Element_Handler::InitializeProcesses(): Performing tests .................. done ( 320 MB, 0s / 0s ).
+Initialized the Matrix_Element_Handler for the hard processes.
+Initialized the Beam_Remnant_Handler.
+Hard_Decay_Handler::SetDecayMasses(): Massive decay flavours: (c,cb,b,bb,e-,e+,nu_e,nu_eb,mu-,mu+,nu_mu,nu_mub,tau-,tau+,nu_tau,nu_taub,Z,W+,W-,h0)
+Initialising hard decay tables.
+
+Decay table for : W+.
+                 Total width: 2.10561 GeV
+               Flavour width: 2.06 GeV
+----------------------------------------
+{24,2,-1}         W+ --> u db              0.702203   GeV, BR= 33.3492 %
+{24,4,-3}         W+ --> c sb              0.701546   GeV, BR= 33.318 %
+{24,12,-11}       W+ --> nu_e e+           0.234068   GeV, BR= 11.1164 %
+{24,14,-13}       W+ --> nu_mu mu+         0.234066   GeV, BR= 11.1163 %
+{24,16,-15}       W+ --> nu_tau tau+       0.233725   GeV, BR= 11.1001 %
+----------------------------------------
+
+Decay table for : W-.
+Total width:                  2.10561 GeV
+Flavour width:                2.06 GeV
+----------------------------------------
+{-24,-2,1}        W- --> ub d              0.702203   GeV, BR= 33.3492 %
+{-24,-4,3}        W- --> cb s              0.701546   GeV, BR= 33.318 %
+{-24,-12,11}      W- --> nu_eb e-          0.234068   GeV, BR= 11.1164 %
+{-24,-14,13}      W- --> nu_mub mu-        0.234066   GeV, BR= 11.1163 %
+{-24,-16,15}      W- --> nu_taub tau-      0.233725   GeV, BR= 11.1001 %
+----------------------------------------
+
+
+Hadron_Decay_Map::Read:   Initializing HadronDecays.dat. This may take some time.
+Initialized the Hadron_Decay_Handler, Decay model = Hadrons
+Initialized the Soft_Photon_Handler.
+Read in channels from directory : .//Result/Comix/MC_2_4__j__j__W+__W-__b__bb
+Process_Group::CalculateTotalXSec(): Calculate xs for '2_4__j__j__W+__W-__b__bb' (Comix)
+[1m2_4__j__j__W+__W-__b__bb[0m : [34m[1m3.17495 pb[0m +- ( [31m0.0162489 pb = 0.511785 %[0m ) [1m exp. eff: [31m0.168978 %[0m
+  reduce max for 2_4__j__j__W+__W-__b__bb to 0.917819 ( eps = 0.001 ) 
+Read in channels from directory : .//Result/Comix/MC_2_5__j__j__W+__W-__b__bb__j
+Process_Group::CalculateTotalXSec(): Calculate xs for '2_5__j__j__W+__W-__b__bb__j' (Comix)
+[1m2_5__j__j__W+__W-__b__bb__j[0m : [34m[1m1.35534 pb[0m +- ( [31m0.0110619 pb = 0.816166 %[0m ) [1m exp. eff: [31m0.0193323 %[0m
+  reduce max for 2_5__j__j__W+__W-__b__bb__j to 0.945001 ( eps = 0.001 ) 
+----------------------------------------------------------
+-- SHERPA generates events with the following structure --
+----------------------------------------------------------
+Perturbative       : Signal_Processes
+Perturbative       : Hard_Decays
+Perturbative       : Jet_Evolution:CSS
+Perturbative       : Lepton_FS_QED_Corrections:None
+Perturbative       : Multiple_Interactions:None
+Perturbative       : Minimum_Bias:Off
+Hadronization      : Beam_Remnants
+Hadronization      : Hadronization:Ahadic
+Hadronization      : Hadron_Decays
+Analysis           : HepMC2
+---------------------------------------------------------
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1904.39,3.78629e-12,1.21965e-11,947.729) vs. p_{out} = (2036.16,27.9316,55.1518,831.366),
+   diff = (131.766,27.9316,55.1518,-116.363).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2100.81,-6.70858e-14,-3.98925e-13,-1455.22) vs. p_{out} = (2100.78,0.00390525,0.0271872,-1455.2),
+   diff = (-0.0335463,0.00390525,0.0271872,0.0192604).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1497.86,3.66793e-11,1.31635e-11,707.898) vs. p_{out} = (1608.39,-66.5401,-19.0078,794.073),
+   diff = (110.522,-66.5401,-19.0078,86.1751).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3506.64,-4.06176e-11,-2.09738e-11,-2141.71) vs. p_{out} = (3670.08,-61.1431,146.743,-2103.77),
+   diff = (163.437,-61.1431,146.743,37.9396).
+Remnant_Base::TestExtract(G,19208.3): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5214.87,-1.78179e-11,1.3031e-10,961.103) vs. p_{out} = (5992.23,179.437,-30.8407,205.366),
+   diff = (777.359,179.437,-30.8407,-755.737).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5625.27,8.82314e-11,9.65838e-11,3069.24) vs. p_{out} = (7273.49,-79.2703,50.0458,4714.79),
+   diff = (1648.22,-79.2703,50.0458,1645.55).
+Decay_Channel::GenerateKinematics(B_{c}+ --> c cb tau+ nu_tau ) warning:
+  d\Gamma(x)=3.08568e-13 > max(d\Gamma)=2.048e-13
+Remnant_Base::TestExtract(G,8297.9): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Decay_Channel::GenerateKinematics(B_{c}+ --> c cb c sb ) warning:
+  d\Gamma(x)=2.85166e-14 > max(d\Gamma)=1.346e-14
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3172.79,-2.55949e-12,2.08907e-11,-2443.62) vs. p_{out} = (3361.62,18.0986,-129.358,-2307.26),
+   diff = (188.829,18.0986,-129.358,136.365).
+Remnant_Base::TestExtract(G,13589.6): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5073.74,7.84102e-11,6.32587e-11,-1891.67) vs. p_{out} = (5181.09,81.0792,-52.4465,-1938.03),
+   diff = (107.352,81.0792,-52.4465,-46.3544).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6397.99,1.77427e-10,3.72536e-10,-2574.74) vs. p_{out} = (7158.79,-58.2197,3.08803,-1816.17),
+   diff = (760.802,-58.2197,3.08803,758.565).
+Decay_Channel::GenerateKinematics(Omega-_{b} --> ss_1 c cb s ) warning:
+  d\Gamma(x)=4.24752e-14 > max(d\Gamma)=3.26428e-14
+Decay_Channel::GenerateKinematics(Xi-_{b} --> sd_0 c tau- nu_taub ) warning:
+  d\Gamma(x)=2.1018e-13 > max(d\Gamma)=1.37715e-13
+Remnant_Base::TestExtract(G,7290.06): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7104,1.10673e-10,2.03352e-10,-4334.63) vs. p_{out} = (7810.07,-392.242,441.784,-4721.28),
+   diff = (706.066,-392.242,441.784,-386.655).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5071.86,9.99718e-11,-2.39742e-10,684.329) vs. p_{out} = (5833.99,-145.32,-523.661,1218.66),
+   diff = (762.137,-145.32,-523.661,534.334).
+Remnant_Base::TestExtract(G,12142.3): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5173.24,-1.40723e-12,-1.83711e-12,-4278.51) vs. p_{out} = (5285.61,-75.7151,18.6986,-4359.4),
+   diff = (112.367,-75.7151,18.6986,-80.8893).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2854.63,-5.49919e-12,1.87592e-11,-580.779) vs. p_{out} = (3281.49,-54.1557,-79.0518,-996.752),
+   diff = (426.868,-54.1557,-79.0518,-415.973).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3605.43,-1.68057e-12,2.3997e-11,2342.38) vs. p_{out} = (3729.61,-60.2887,-56.8199,2434.88),
+   diff = (124.178,-60.2887,-56.8199,92.5031).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2158.7,6.46424e-12,-5.98881e-11,-1083.89) vs. p_{out} = (2288.89,37.0455,31.0509,-1204.77),
+   diff = (130.19,37.0455,31.0509,-120.884).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5657.52,1.83498e-12,-6.04672e-12,3715.19) vs. p_{out} = (5773.12,24.199,41.0205,3820.53),
+   diff = (115.602,24.199,41.0205,105.348).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5022.4,-2.99953e-11,-5.44352e-11,2357.57) vs. p_{out} = (5367.34,216.638,261.469,2296.81),
+   diff = (344.949,216.638,261.469,-60.7561).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3458.86,2.43312e-11,1.15341e-13,-2862.38) vs. p_{out} = (3640.92,-66.7714,22.2638,-3030.28),
+   diff = (182.058,-66.7714,22.2638,-167.902).
+Remnant_Base::TestExtract(G,9025.2): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4000.12,1.06501e-10,3.05694e-11,-3753.39) vs. p_{out} = (4099.51,76.5214,3.44455,-3816.73),
+   diff = (99.3943,76.5214,3.44455,-63.3391).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6509.68,-1.05059e-10,-1.77198e-10,-3487.05) vs. p_{out} = (8130.64,1134.98,-887.878,-2744.75),
+   diff = (1620.96,1134.98,-887.878,742.297).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3199.91,1.5901e-10,-2.01204e-11,954.518) vs. p_{out} = (3252.24,-13.4969,38.8114,922.112),
+   diff = (52.3321,-13.4969,38.8114,-32.4061).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1100.97,0,0,-717.942) vs. p_{out} = (1411.32,156.659,-4.99938,-985.793),
+   diff = (310.347,156.659,-4.99938,-267.851).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2572.92,6.63475e-12,1.26227e-11,-2109.1) vs. p_{out} = (2776.63,88.0179,53.771,-2284.77),
+   diff = (203.708,88.0179,53.771,-175.665).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2692.75,-8.7849e-13,6.02879e-13,2508.82) vs. p_{out} = (3715.27,68.612,-95.8607,3524.53),
+   diff = (1022.53,68.612,-95.8607,1015.71).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4344.79,1.16489e-11,-6.56336e-13,-2877.21) vs. p_{out} = (4344.69,-0.0579179,0.0593779,-2877.27),
+   diff = (-0.101014,-0.0579179,0.0593779,-0.0576516).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1065.47,-4.26872e-12,4.00556e-12,1045.23) vs. p_{out} = (1216.94,17.6688,-10.8864,939.269),
+   diff = (151.467,17.6688,-10.8864,-105.964).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3048.68,2.80673e-11,2.00755e-11,789.74) vs. p_{out} = (3746.13,61.1123,6.71317,1484.48),
+   diff = (697.451,61.1123,6.71317,694.736).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4341.03,1.55425e-11,-1.09887e-10,-265.106) vs. p_{out} = (4606.37,16.9147,-244.446,-163.296),
+   diff = (265.34,16.9147,-244.446,101.809).
+Remnant_Base::TestExtract(G,33294.4): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3908.7,2.07763e-11,4.09606e-12,1958.38) vs. p_{out} = (4598.21,162.08,-339.963,1380.82),
+   diff = (689.508,162.08,-339.963,-577.561).
+Remnant_Base::TestExtract(G,7458.86): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (8257.43,3.52983e-10,-4.21986e-10,-338.375) vs. p_{out} = (9660.61,-37.1664,682.859,-1563.62),
+   diff = (1403.18,-37.1664,682.859,-1225.25).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2040.64,-1.03169e-11,-7.53242e-12,374.723) vs. p_{out} = (2371.88,38.6087,-29.4401,702.381),
+   diff = (331.236,38.6087,-29.4401,327.658).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (9604.46,-2.57688e-11,1.52853e-11,-1071.22) vs. p_{out} = (10007.4,243.741,-258.144,-880.764),
+   diff = (402.892,243.741,-258.144,190.458).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1503.47,-2.04281e-14,3.73035e-14,745.47) vs. p_{out} = (1546.3,28.299,-23.7795,723.84),
+   diff = (42.8267,28.299,-23.7795,-21.6293).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3125.56,-2.30585e-11,8.24497e-11,1404.4) vs. p_{out} = (3649.3,-84.6799,342.402,1791.56),
+   diff = (523.739,-84.6799,342.402,387.16).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1492.16,7.97584e-13,-1.36424e-12,1196.15) vs. p_{out} = (2168.49,583.971,308.182,1342.53),
+   diff = (676.333,583.971,308.182,146.384).
+Remnant_Base::TestExtract(G,98358): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3117.66,-2.61728e-11,3.48557e-11,-2440.02) vs. p_{out} = (3367.99,6.07066,72.5331,-2679.53),
+   diff = (250.328,6.07066,72.5331,-239.512).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (9372.83,1.87859e-08,8.34826e-09,3149.49) vs. p_{out} = (13124.5,1882.81,717.163,-15.3015),
+   diff = (3751.69,1882.81,717.163,-3164.79).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1757.63,-2.63589e-12,-5.5409e-12,1072.74) vs. p_{out} = (2010.66,-8.09094,1.98997,819.848),
+   diff = (253.024,-8.09094,1.98997,-252.887).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6414.28,8.21222e-13,-1.61667e-11,4355.96) vs. p_{out} = (7016.72,267.588,-236.81,4840.98),
+   diff = (602.435,267.588,-236.81,485.021).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6150.66,-1.51558e-11,5.54194e-10,-4031.77) vs. p_{out} = (6377.23,177.679,-137.853,-4004.22),
+   diff = (226.567,177.679,-137.853,27.5517).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3642,1.49295e-10,7.45762e-12,647.157) vs. p_{out} = (3798.45,-44.621,62.2829,783.563),
+   diff = (156.45,-44.621,62.2829,136.406).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2269.03,8.69819e-13,9.8771e-13,-1010.26) vs. p_{out} = (2821.58,100.797,-33.9472,-468.044),
+   diff = (552.551,100.797,-33.9472,542.218).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1609.01,9.11595e-12,-1.26642e-11,697.26) vs. p_{out} = (1719.52,-27.3897,-101.258,732.037),
+   diff = (110.512,-27.3897,-101.258,34.7767).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3069.75,-1.75194e-12,-3.48949e-11,1094.85) vs. p_{out} = (3415.51,122,40.9868,1415.77),
+   diff = (345.764,122,40.9868,320.919).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6058.72,1.78277e-10,3.07127e-10,2012.95) vs. p_{out} = (6060.53,0.731829,1.46977,2013.7),
+   diff = (1.80635,0.731829,1.46977,0.753051).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5236.12,-1.81458e-09,1.57376e-10,1830.09) vs. p_{out} = (5441.51,74.7007,-32.5607,1690.66),
+   diff = (205.397,74.7007,-32.5607,-139.427).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2150.43,-3.10558e-11,3.82059e-11,28.2938) vs. p_{out} = (2224.16,-51.4694,30.7001,71.2356),
+   diff = (73.7265,-51.4694,30.7001,42.9418).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1959.51,-7.80417e-12,-4.33699e-12,-229.076) vs. p_{out} = (2178.87,126.445,-94.5724,-381.345),
+   diff = (219.359,126.445,-94.5724,-152.27).
+Remnant_Base::TestExtract(G,35347.5): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5133.78,-8.30447e-13,-8.7752e-13,-3269.13) vs. p_{out} = (6604.28,1334.84,-56.4125,-3883.44),
+   diff = (1470.5,1334.84,-56.4125,-614.313).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2124.32,-4.46341e-11,-3.00329e-11,206.781) vs. p_{out} = (2243.67,11.6064,-15.5072,89.0119),
+   diff = (119.351,11.6064,-15.5072,-117.769).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1255.56,3.74135e-12,-6.00279e-13,49.2819) vs. p_{out} = (1990.02,-30.0787,8.2486,783.084),
+   diff = (734.464,-30.0787,8.2486,733.802).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3408.78,1.3653e-11,-9.79274e-12,1198.15) vs. p_{out} = (3408.72,0.0218632,0.0117713,1198.1),
+   diff = (-0.0540231,0.0218632,0.0117713,-0.0479784).
+Remnant_Base::TestExtract(G,13677.8): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5412.81,5.51025e-11,1.0612e-10,4942.51) vs. p_{out} = (5454.55,-3.707,-37.8447,4959.71),
+   diff = (41.7362,-3.707,-37.8447,17.2032).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6770.18,2.42705e-11,-9.51141e-11,1785.96) vs. p_{out} = (7446.42,-528.75,-175.152,1402.49),
+   diff = (676.24,-528.75,-175.152,-383.466).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3572.62,-1.9573e-12,2.08016e-11,-3292.15) vs. p_{out} = (3740.51,12.997,91.5345,-3432.3),
+   diff = (167.893,12.997,91.5345,-140.145).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2347.08,6.66311e-12,1.47232e-12,1516.05) vs. p_{out} = (2580,-147.04,-141.59,1403.89),
+   diff = (232.914,-147.04,-141.59,-112.162).
+Remnant_Base::TestExtract(sb,26067): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (9741.61,-6.27208e-10,4.12733e-10,-2703.85) vs. p_{out} = (10711,408.552,-701.246,-3234.02),
+   diff = (969.402,408.552,-701.246,-530.169).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1851.37,-4.23014e-13,4.16697e-13,-1834.68) vs. p_{out} = (2396.22,2.82844e-11,-2.2928e-11,-1289.83),
+   diff = (544.848,2.87074e-11,-2.33447e-11,544.848).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2259.63,-2.52847e-13,5.90415e-13,-1661.95) vs. p_{out} = (3187.4,16.2616,100.803,-2584.08),
+   diff = (927.77,16.2616,100.803,-922.135).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1145.14,-1.00808e-12,-2.77645e-12,415.274) vs. p_{out} = (3011.79,154.047,-31.2314,2275.3),
+   diff = (1866.65,154.047,-31.2314,1860.02).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2398.18,-3.53312e-11,7.24602e-11,-815.674) vs. p_{out} = (2697.53,-154.503,201.866,-657.579),
+   diff = (299.358,-154.503,201.866,158.095).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6672.4,-4.21984e-11,-3.11441e-11,-3723.33) vs. p_{out} = (7443.47,179.994,-22.4831,-2973.9),
+   diff = (771.076,179.994,-22.4831,749.436).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7117.1,8.77454e-12,3.12997e-11,374.263) vs. p_{out} = (7444.24,106.464,197.584,136.264),
+   diff = (327.135,106.464,197.584,-237.999).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (9859.01,-1.80607e-10,1.20178e-10,1755.58) vs. p_{out} = (12803.1,-2438.36,-1607.48,1383.84),
+   diff = (2944.11,-2438.36,-1607.48,-371.744).
+Remnant_Base::TestExtract(G,37587.5): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3022.45,1.62558e-10,4.39642e-11,-797.562) vs. p_{out} = (3801.63,-302.5,183.849,-103.428),
+   diff = (779.184,-302.5,183.849,694.134).
+Remnant_Base::TestExtract(G,31222): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(G,8609.36): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2722.91,8.54057e-10,-4.57416e-10,-1159.38) vs. p_{out} = (2829.6,-75.1624,-23.2738,-1087.33),
+   diff = (106.688,-75.1624,-23.2738,72.051).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3405.35,3.50354e-11,2.39589e-11,2718.57) vs. p_{out} = (3910.95,-87.2469,-169.377,2250.24),
+   diff = (505.602,-87.2469,-169.377,-468.33).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2436.15,5.60975e-11,-8.15586e-12,492.655) vs. p_{out} = (2689.91,-147.481,92.8245,677.119),
+   diff = (253.76,-147.481,92.8245,184.465).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4780.43,3.56531e-11,1.12634e-10,3361.71) vs. p_{out} = (5108.41,78.2672,-33.482,3044.96),
+   diff = (327.983,78.2672,-33.482,-316.743).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5911.56,-1.78999e-11,6.88355e-12,-1595.3) vs. p_{out} = (5911.65,-0.0584325,-0.0358421,-1595.26),
+   diff = (0.0920117,-0.0584325,-0.0358421,0.0405956).
+Remnant_Base::TestExtract(G,29880.9): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3966.98,8.1783e-11,7.44231e-11,2080.38) vs. p_{out} = (5025.67,205.802,45.5216,3117.88),
+   diff = (1058.7,205.802,45.5216,1037.5).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3984.96,1.60195e-10,-6.03121e-11,537.942) vs. p_{out} = (4294.81,-125.764,-172.859,762.245),
+   diff = (309.853,-125.764,-172.859,224.303).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2842.46,-1.97533e-12,-1.00017e-11,1722.19) vs. p_{out} = (3054.42,-35.0327,-198.056,1655.29),
+   diff = (211.964,-35.0327,-198.056,-66.8996).
+Decay_Channel::GenerateKinematics(B+ --> K+ omega(782) pi ): Rejected decay kinematics 10000 times. This indicates a wrong maximum. Will accept kinematics.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3265.05,-5.63985e-11,-2.31614e-10,1137.43) vs. p_{out} = (4050.01,104.124,-167.097,377.562),
+   diff = (784.959,104.124,-167.097,-759.867).
+Remnant_Base::TestExtract(G,17457.8): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1829.21,0,0,1790.65) vs. p_{out} = (2168.77,-1.803e-13,1.112e-12,1451.09),
+   diff = (339.56,-1.803e-13,1.112e-12,-339.56).
+Remnant_Base::TestExtract(ub,87393.6): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (518.725,-1.99396e-13,-4.50306e-13,355.289) vs. p_{out} = (786.425,8.52561,19.3217,88.4232),
+   diff = (267.7,8.52561,19.3217,-266.866).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5442.77,-1.57286e-10,-1.40586e-11,-3274.77) vs. p_{out} = (5873.76,-338.284,266.008,-3298.27),
+   diff = (430.985,-338.284,266.008,-23.4974).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1791.71,-1.29603e-12,1.74578e-11,732.74) vs. p_{out} = (2169.23,160.584,110.914,1055.89),
+   diff = (377.511,160.584,110.914,323.15).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3310.41,1.25606e-11,1.35546e-11,1522.52) vs. p_{out} = (3662.15,187.495,-297.074,1508.28),
+   diff = (351.737,187.495,-297.074,-14.2412).
+Remnant_Base::TestExtract(G,7001.71): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1619.31,2.57164e-12,2.98219e-11,-847.399) vs. p_{out} = (1811.59,-31.0983,17.3998,-658.45),
+   diff = (192.28,-31.0983,17.3998,188.949).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3792.18,2.94984e-11,4.8629e-11,1203.83) vs. p_{out} = (3961.6,91.4671,-142.599,1205.34),
+   diff = (169.42,91.4671,-142.599,1.50398).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1695.7,-1.02121e-11,-7.65407e-12,-549.557) vs. p_{out} = (1996.56,-56.4623,-119.277,-819.931),
+   diff = (300.86,-56.4623,-119.277,-270.374).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2228.72,1.65035e-11,8.16913e-12,2052.37) vs. p_{out} = (2319.06,-2.33324e-11,-1.08038e-11,1962.02),
+   diff = (90.3402,-3.98359e-11,-1.89729e-11,-90.3402).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5783.28,1.33757e-11,-2.08397e-12,-1116.16) vs. p_{out} = (5925.78,-51.0091,-27.7053,-1007.05),
+   diff = (142.5,-51.0091,-27.7053,109.103).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2084.92,9.05565e-12,3.44818e-11,-898.641) vs. p_{out} = (2330.89,129.355,67.0629,-1096.81),
+   diff = (245.966,129.355,67.0629,-198.165).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1113.49,1.20044e-11,-4.61715e-11,-68.8412) vs. p_{out} = (1906.43,229.266,-250.37,-596.488),
+   diff = (792.938,229.266,-250.37,-527.647).
+Remnant_Base::TestExtract(G,14472.1): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3040.33,-7.04746e-13,-2.22601e-12,2321.22) vs. p_{out} = (3040.2,-0.0470778,-0.0464733,2321.1),
+   diff = (-0.131193,-0.0470778,-0.0464733,-0.113294).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3179.26,-3.92768e-11,-8.55152e-11,21.1896) vs. p_{out} = (3619.22,53.7328,-32.3668,456.657),
+   diff = (439.962,53.7328,-32.3668,435.468).
+Remnant_Base::TestExtract(G,7743.33): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7338.72,3.57792e-11,-8.57498e-11,-3626.37) vs. p_{out} = (7360.82,21.404,2.80224,-3631.1),
+   diff = (22.0976,21.404,2.80224,-4.72476).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4658.39,2.20962e-12,-1.65543e-11,3685.39) vs. p_{out} = (6057.9,-202.726,-9.12418,2300.68),
+   diff = (1399.5,-202.726,-9.12418,-1384.71).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1060.63,0,0,810.62) vs. p_{out} = (1329.73,-46.3282,179.638,1005.56),
+   diff = (269.104,-46.3282,179.638,194.939).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1160.29,1.09784e-11,2.57968e-12,-291.403) vs. p_{out} = (1756.47,-46.9585,83.5141,-879.829),
+   diff = (596.175,-46.9585,83.5141,-588.426).
+Remnant_Base::TestExtract(u,19259): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(db,316178): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3826.6,-1.21316e-10,4.95907e-11,1401.48) vs. p_{out} = (3881.03,-8.56506,-20.63,1451.12),
+   diff = (54.43,-8.56506,-20.63,49.6354).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3698.06,2.07612e-10,-5.42952e-11,1377.08) vs. p_{out} = (4354.18,87.3273,110.25,2017.96),
+   diff = (656.128,87.3273,110.25,640.877).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6981.33,-4.46317e-10,4.89303e-11,-2522.44) vs. p_{out} = (7611.16,-121.714,377.121,-2032.9),
+   diff = (629.826,-121.714,377.121,489.537).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7793.62,3.56789e-10,2.12289e-10,-1272.84) vs. p_{out} = (8168.93,25.0453,80.9167,-907.216),
+   diff = (375.307,25.0453,80.9167,365.623).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6021.51,-2.8814e-12,1.3749e-13,-1156.9) vs. p_{out} = (6203.79,0.41559,-174.543,-1104.35),
+   diff = (182.283,0.41559,-174.543,52.5511).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4115.34,2.15003e-10,-2.38107e-10,250.74) vs. p_{out} = (4612.75,-3.17115,-248.773,681.465),
+   diff = (497.415,-3.17115,-248.773,430.725).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3547.51,2.13895e-12,-2.64609e-11,-1502.48) vs. p_{out} = (4210.74,-110.314,247.254,-2107.94),
+   diff = (663.236,-110.314,247.254,-605.458).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4715.78,1.27148e-10,5.65332e-10,1870.82) vs. p_{out} = (5253.42,1.88428,-189.497,2373.96),
+   diff = (537.646,1.88428,-189.497,503.14).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7565.37,-1.59984e-10,9.01688e-11,1085.36) vs. p_{out} = (7907.02,290.461,32.6439,908.472),
+   diff = (341.647,290.461,32.6439,-176.888).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7122.38,2.18723e-10,2.84897e-10,1481.52) vs. p_{out} = (7291.41,-22.7011,167.426,1486.48),
+   diff = (169.031,-22.7011,167.426,4.96206).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1527.2,-3.61836e-12,-6.7316e-12,579.252) vs. p_{out} = (1640.34,-32.3115,37.7899,680.887),
+   diff = (113.145,-32.3115,37.7899,101.636).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5411.53,-1.05847e-10,9.42058e-11,2098.99) vs. p_{out} = (5805.72,114.444,-112.516,1738.96),
+   diff = (394.182,114.444,-112.516,-360.03).
+Remnant_Base::TestExtract(G,10450.7): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1843.7,3.41749e-11,6.91982e-12,-420.85) vs. p_{out} = (2513.8,-47.7627,-310.753,-35.8927),
+   diff = (670.095,-47.7627,-310.753,384.957).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2042.9,2.25761e-11,9.31729e-12,-703.813) vs. p_{out} = (2193.79,-76.5246,-115.843,-762.944),
+   diff = (150.891,-76.5246,-115.843,-59.1306).
+Decay_Channel::GenerateKinematics(K_{2}*(1430) --> K+ rho+(770)b ) warning:
+  d\Gamma(x)=0.000138154 > max(d\Gamma)=0.000103546
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7496.41,-3.04496e-10,9.35894e-11,430.422) vs. p_{out} = (8049.8,539.079,-68.9652,326.102),
+   diff = (553.394,539.079,-68.9652,-104.32).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2811.01,-1.81952e-13,1.1614e-13,-2598.29) vs. p_{out} = (4057.18,-117.607,-45.5407,-3838.06),
+   diff = (1246.17,-117.607,-45.5407,-1239.77).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4005.8,-5.00523e-11,7.96476e-11,2456.45) vs. p_{out} = (4357.22,-114.759,4.06842,2124.32),
+   diff = (351.424,-114.759,4.06842,-332.133).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1879.42,-9.27126e-12,-1.01607e-11,-259.757) vs. p_{out} = (1979.95,55.4868,-80.6337,-282.682),
+   diff = (100.529,55.4868,-80.6337,-22.9249).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (259.895,0,0,84.4012) vs. p_{out} = (627.609,-8.53984e-13,2.97939e-12,-283.312),
+   diff = (367.713,-8.53984e-13,2.97939e-12,-367.713).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4442.87,-8.32667e-17,2.22045e-16,-2394.1) vs. p_{out} = (4878.33,-248.922,-264.096,-2634.75),
+   diff = (435.455,-248.922,-264.096,-240.651).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3909.8,-6.4108e-11,5.29084e-11,-201.727) vs. p_{out} = (4260.87,-296.594,187.781,-205.855),
+   diff = (351.065,-296.594,187.781,-4.12717).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2608.41,1.36563e-12,-1.61055e-12,-226.16) vs. p_{out} = (2982.78,-43.9122,-143.836,116.673),
+   diff = (374.368,-43.9122,-143.836,342.833).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7047.33,9.92279e-10,1.18888e-10,506.918) vs. p_{out} = (9753.48,764.275,-796.338,2977.74),
+   diff = (2706.15,764.275,-796.338,2470.82).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2527.03,9.50204e-11,1.20696e-12,370.954) vs. p_{out} = (3276.66,91.4653,-739.645,451.633),
+   diff = (749.633,91.4653,-739.645,80.6791).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3688.51,1.15272e-12,-7.58706e-12,-3240.54) vs. p_{out} = (4764.38,180.523,-184.24,-4285.03),
+   diff = (1075.87,180.523,-184.24,-1044.49).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (9184.89,-3.30155e-11,2.13454e-11,3474.2) vs. p_{out} = (9834.69,524.072,-375.757,3394.26),
+   diff = (649.797,524.072,-375.757,-79.9445).
+Remnant_Base::TestExtract(G,7577.77): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(G,6542.72): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4435.5,-2.39268e-12,-8.81558e-13,-3704.58) vs. p_{out} = (4622.5,-7.85805,24.0607,-3519.3),
+   diff = (186.999,-7.85805,24.0607,185.278).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5218.77,-3.45759e-11,-3.56215e-12,-1422.87) vs. p_{out} = (5495.1,-229.488,77.2102,-1289.88),
+   diff = (276.329,-229.488,77.2102,132.989).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1762.07,2.65243e-11,-1.13979e-12,-759.255) vs. p_{out} = (2168.22,-230.202,-45.665,-1090.73),
+   diff = (406.149,-230.202,-45.665,-331.479).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6970.37,-1.15094e-14,7.52468e-12,-3854.29) vs. p_{out} = (6970.62,-0.0766775,0.0545594,-3854.52),
+   diff = (0.252384,-0.0766775,0.0545594,-0.234182).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1590.26,2.38534e-11,2.14042e-11,81.5102) vs. p_{out} = (1670.68,-60.5841,-37.0823,119.226),
+   diff = (80.424,-60.5841,-37.0823,37.7159).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7868.79,9.43527e-11,3.74315e-11,-2413.34) vs. p_{out} = (8953.91,-493.79,448.243,-1557.34),
+   diff = (1085.12,-493.79,448.243,855.996).
+Remnant_Base::TestExtract(G,18815.7): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2337.24,1.76823e-10,-3.13879e-11,405.469) vs. p_{out} = (2506.77,-14.8764,-15.5246,573.63),
+   diff = (169.53,-14.8764,-15.5246,168.161).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4496.05,-2.33672e-13,-3.80683e-12,2741) vs. p_{out} = (4587.13,-61.3299,-62.1858,2715.16),
+   diff = (91.0815,-61.3299,-62.1858,-25.8345).
+Remnant_Base::TestExtract(G,17283.1): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4505.97,3.38747e-10,-1.62647e-10,185.938) vs. p_{out} = (4606.02,-7.66969,86.049,135.469),
+   diff = (100.052,-7.66969,86.049,-50.4688).
+Remnant_Base::TestExtract(sb,90760.2): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(d,26203.9): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4709.13,-5.65183e-11,-2.69129e-12,-1536.52) vs. p_{out} = (4888.62,-58.4585,24.8124,-1704.23),
+   diff = (179.487,-58.4585,24.8124,-167.713).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3445.32,8.21273e-12,-6.45843e-11,2585) vs. p_{out} = (3711.86,1.1014,45.2321,2847.66),
+   diff = (266.54,1.1014,45.2321,262.664).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3945.55,-1.44966e-11,5.34995e-10,1089.24) vs. p_{out} = (4579.55,-429.189,-395.758,1336.47),
+   diff = (633.995,-429.189,-395.758,247.228).
+Remnant_Base::TestExtract(G,7837.46): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2968.52,1.9755e-11,-2.49534e-11,-1451.8) vs. p_{out} = (3348.93,195.546,-253.685,-1657.03),
+   diff = (380.408,195.546,-253.685,-205.222).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1437.21,2.62916e-12,4.7636e-12,-37.1218) vs. p_{out} = (2458.11,-503.306,-23.7625,850.776),
+   diff = (1020.9,-503.306,-23.7625,887.898).
+Remnant_Base::TestExtract(cb,169198): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1212.71,-6.27141e-12,1.85399e-11,-572.472) vs. p_{out} = (1560.45,-159.338,216.522,-793.156),
+   diff = (347.747,-159.338,216.522,-220.685).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7492.86,-3.57451e-12,-5.2188e-12,662.889) vs. p_{out} = (9267.68,-84.275,-71.991,2434.24),
+   diff = (1774.82,-84.275,-71.991,1771.35).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3842.55,4.13137e-11,-1.09579e-10,-2302.01) vs. p_{out} = (4571.82,-354.748,235.501,-2894.07),
+   diff = (729.272,-354.748,235.501,-592.056).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6903.5,2.82462e-10,-5.04589e-10,-1894.32) vs. p_{out} = (8693.94,1384.12,-520.498,-2903.77),
+   diff = (1790.44,1384.12,-520.498,-1009.45).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (8373.28,2.55982e-10,4.57294e-10,1502.5) vs. p_{out} = (9422.49,-839.429,137.823,888.322),
+   diff = (1049.21,-839.429,137.823,-614.174).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2836.44,-5.56453e-12,4.35697e-12,-2208.9) vs. p_{out} = (4008.09,65.9602,-66.4939,-3376.8),
+   diff = (1171.65,65.9602,-66.4939,-1167.9).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1511.72,39.7787,-55.3531,500.543) vs. p_{out} = (1244.15,33.042,6.61657,772.175),
+   diff = (-267.573,-6.73665,61.9697,271.632).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4949.53,4.2732e-10,-1.20188e-09,1348.95) vs. p_{out} = (5864.6,-295.425,118.096,2206.93),
+   diff = (915.071,-295.425,118.096,857.982).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4696.68,-1.09872e-10,1.27469e-10,498.635) vs. p_{out} = (6093.81,137.512,482.561,1802.55),
+   diff = (1397.13,137.512,482.561,1303.91).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5775.98,-9.62635e-11,3.06296e-11,-5381.89) vs. p_{out} = (5831.27,10.4777,33.5648,-5424.56),
+   diff = (55.2921,10.4777,33.5648,-42.6712).
+Remnant_Base::TestExtract(d,9346.91): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1022.28,8.05086e-12,-5.63634e-12,-86.9546) vs. p_{out} = (1323.66,-49.106,-60.047,204.274),
+   diff = (301.382,-49.106,-60.047,291.229).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2404.9,-8.80543e-12,-1.07229e-10,-953.621) vs. p_{out} = (2979.02,-35.9153,-59.3559,-1523.53),
+   diff = (574.118,-35.9153,-59.3559,-569.911).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2506.78,-3.80569e-11,-1.05878e-11,188.356) vs. p_{out} = (3287.85,-176.832,758.079,252.541),
+   diff = (781.071,-176.832,758.079,64.1852).
+Remnant_Base::TestExtract(d,7445.89): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(G,6697.78): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3646.51,3.12947e-12,1.67258e-12,3449.01) vs. p_{out} = (3743.31,31.2838,-28.8626,3535.94),
+   diff = (96.7961,31.2838,-28.8626,86.9353).
+Remnant_Base::TestExtract(ub,6975.69): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2451.52,-3.17468e-13,9.02722e-13,2445.99) vs. p_{out} = (2561.29,1.12837e-10,-1.09917e-10,2336.22),
+   diff = (109.772,1.13154e-10,-1.10819e-10,-109.772).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4202.17,2.04419e-11,-1.42087e-10,-3291.55) vs. p_{out} = (4737.52,44.1995,-201.04,-2797.37),
+   diff = (535.345,44.1995,-201.04,494.189).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1753.53,1.61124e-12,-2.28519e-13,865.263) vs. p_{out} = (2164.67,43.5535,-36.7546,1272.43),
+   diff = (411.14,43.5535,-36.7546,407.171).
+Remnant_Base::TestExtract(G,133228): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7993.82,5.52039e-13,-2.32552e-12,-1272.49) vs. p_{out} = (8232.8,-164.635,-51.4008,-1107.07),
+   diff = (238.979,-164.635,-51.4008,165.421).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6151.95,-4.05713e-11,-1.17157e-10,-5079.33) vs. p_{out} = (6904,107.455,-5.71992,-4335.04),
+   diff = (752.057,107.455,-5.71992,744.292).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1345.09,-2.89075e-12,-1.14701e-12,-1203.96) vs. p_{out} = (1484.42,-7.33783,-2.91125,-1064.85),
+   diff = (139.325,-7.33783,-2.91125,139.102).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (8400.67,3.48308e-12,2.46008e-11,-2135.45) vs. p_{out} = (8406.25,-2.96261,-3.85361,-2138.19),
+   diff = (5.58139,-2.96261,-3.85361,-2.7431).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3530.44,-5.13989e-12,-4.31266e-13,3222.03) vs. p_{out} = (3732.04,12.0143,53.0461,3416.15),
+   diff = (201.595,12.0143,53.0461,194.12).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5579.81,-3.68338e-11,-2.66625e-11,1835.92) vs. p_{out} = (6100.17,40.1876,241.18,2295.26),
+   diff = (520.365,40.1876,241.18,459.344).
+Remnant_Base::TestExtract(ub,9959.43): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6992.79,-8.70185e-11,-8.68103e-12,-907.224) vs. p_{out} = (7009,-15.5113,-0.879085,-911.868),
+   diff = (16.2154,-15.5113,-0.879085,-4.64394).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3497.93,3.97957e-11,-4.98078e-11,-1273.03) vs. p_{out} = (4081.07,294.191,-20.3658,-769.964),
+   diff = (583.131,294.191,-20.3658,503.07).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3216.29,-2.57026e-12,-1.58285e-11,-761.603) vs. p_{out} = (4011.85,-648.986,445.974,-874.876),
+   diff = (795.555,-648.986,445.974,-113.274).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5126.23,1.5748e-10,-2.85423e-10,2056.84) vs. p_{out} = (5204.37,57.1881,40.407,2091.51),
+   diff = (78.1369,57.1881,40.407,34.6724).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1177.73,5.82728e-13,-9.56213e-12,-126.026) vs. p_{out} = (1180.06,-0.905498,1.12582,-124.189),
+   diff = (2.33559,-0.905498,1.12582,1.83689).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2215.51,4.19923e-13,2.49393e-13,-444.639) vs. p_{out} = (2168.85,-15.54,-45.2542,-544.032),
+   diff = (-46.6599,-15.54,-45.2542,-99.3923).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2811.34,-1.07629e-11,-9.19886e-12,-1289.95) vs. p_{out} = (3343.5,-163.723,135.786,-802.146),
+   diff = (532.159,-163.723,135.786,487.801).
+Remnant_Base::TestExtract(G,6944.32): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4719.14,-2.96429e-11,-2.56615e-11,2847.39) vs. p_{out} = (5422.38,50.3245,27.5685,3548.29),
+   diff = (703.246,50.3245,27.5685,700.901).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1057.08,0,0,454.122) vs. p_{out} = (1102.88,21.387,20.693,488.933),
+   diff = (45.797,21.387,20.693,34.8103).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3192.1,-8.25157e-12,3.15219e-12,2359.5) vs. p_{out} = (3192.14,0.0377782,-0.0475658,2359.48),
+   diff = (0.0425011,0.0377782,-0.0475658,-0.0176345).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4908.17,9.01001e-11,-1.29797e-10,-2214.05) vs. p_{out} = (5198.75,84.8141,168.866,-2434.8),
+   diff = (290.583,84.8141,168.866,-220.747).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3549.33,2.1322e-11,1.17994e-10,-1366.09) vs. p_{out} = (3836.5,82.4204,-246.228,-1488.77),
+   diff = (287.176,82.4204,-246.228,-122.673).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3583.8,2.52993e-11,1.73395e-11,-2110.83) vs. p_{out} = (4029.94,-66.5,327.222,-1814.94),
+   diff = (446.147,-66.5,327.222,295.89).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3143.84,4.85926e-13,-9.70682e-14,2589.82) vs. p_{out} = (3430.12,-110.092,123.318,2823.55),
+   diff = (286.284,-110.092,123.318,233.733).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3065.3,-4.49616e-11,-7.43402e-11,-1129.42) vs. p_{out} = (3065.33,0.0226029,-0.0220653,-1129.41),
+   diff = (0.0340973,0.0226029,-0.0220653,0.0128397).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1846.76,-4.02167e-12,1.45448e-11,-43.0647) vs. p_{out} = (1882.86,34.1183,10.0223,-36.8458),
+   diff = (36.0996,34.1183,10.0223,6.21899).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2997.55,7.28146e-11,1.41332e-10,1453.43) vs. p_{out} = (3270.63,-262.117,27.5247,1524.92),
+   diff = (273.081,-262.117,27.5247,71.4848).
+ZAlign::ZAlign(): p_b not aligned -> (531.623,-23.1602,23.2934,530.608)
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2283.17,-4.43866e-13,4.00539e-13,47.8261) vs. p_{out} = (2375.89,86.598,7.06819,80.3011),
+   diff = (92.7144,86.598,7.06819,32.475).
+Remnant_Base::TestExtract(G,15262.1): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2243.5,-2.70537e-11,-1.29382e-11,-820.161) vs. p_{out} = (2429.6,52.7986,-0.543032,-641.717),
+   diff = (186.092,52.7986,-0.543032,178.444).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4237.7,3.25053e-12,7.22515e-11,2007.84) vs. p_{out} = (4920.12,-119.203,543.151,2403.42),
+   diff = (682.427,-119.203,543.151,395.58).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4104.58,-4.37562e-12,-6.37243e-12,-1303.3) vs. p_{out} = (5256.12,-41.53,190.409,-2438.23),
+   diff = (1151.54,-41.53,190.409,-1134.93).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2610.14,9.57634e-12,3.0651e-12,1271.35) vs. p_{out} = (2610.04,0.0783075,0.0469654,1271.37),
+   diff = (-0.0935475,0.0783075,0.0469654,0.0203304).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6345.46,-3.81858e-10,-7.95665e-11,-1546.84) vs. p_{out} = (7935.71,-402.564,1331.96,-776.973),
+   diff = (1590.25,-402.564,1331.96,769.869).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4319.84,-4.93251e-11,-4.31248e-11,-151.374) vs. p_{out} = (4912.33,137.349,-27.215,424.325),
+   diff = (592.482,137.349,-27.215,575.699).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2734.99,-2.86417e-11,-2.79944e-11,-427.897) vs. p_{out} = (3199.78,157.188,-201.333,-816.213),
+   diff = (464.792,157.188,-201.333,-388.316).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (8497.03,-1.39256e-12,3.55818e-12,-4148.81) vs. p_{out} = (8535.98,-0.0614005,35.4494,-4132.67),
+   diff = (38.95,-0.0614005,35.4494,16.1383).
+Remnant_Base::TestExtract(u,105506): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7256.04,-3.83529e-11,1.41368e-10,-3873.38) vs. p_{out} = (8382.53,87.881,-127.793,-2757.62),
+   diff = (1126.48,87.881,-127.793,1115.75).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5039.35,7.00126e-11,-4.03994e-11,3995.17) vs. p_{out} = (8010.39,8.69596,-5.01785,6966.2),
+   diff = (2971.04,8.69596,-5.01785,2971.02).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2516.48,-2.19034e-13,2.15528e-13,616.703) vs. p_{out} = (2631.01,-52.6798,-67.5036,540.635),
+   diff = (114.535,-52.6798,-67.5036,-76.0683).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1120.28,-2.3624e-11,3.1601e-11,-1004.11) vs. p_{out} = (1189.2,28.3642,12.3376,-942.518),
+   diff = (68.9251,28.3642,12.3376,61.5949).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6982.76,1.05562e-10,5.22844e-11,4092.39) vs. p_{out} = (8391.81,-700.789,120.699,5308.84),
+   diff = (1409.05,-700.789,120.699,1216.45).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2294.22,-4.72955e-12,6.64634e-12,-390.872) vs. p_{out} = (2465.54,-111.869,129.695,-387.041),
+   diff = (171.319,-111.869,129.695,3.83042).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (955.087,3.40727e-11,-5.75005e-12,656.447) vs. p_{out} = (1211.11,-117.403,218.353,720.39),
+   diff = (256.028,-117.403,218.353,63.9426).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4458.39,1.65364e-11,-3.53437e-11,-2110.07) vs. p_{out} = (4458.59,-0.0453611,-0.00722264,-2109.88),
+   diff = (0.193892,-0.0453611,-0.00722264,0.188373).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3736.84,-3.24184e-10,-1.262e-10,-492.642) vs. p_{out} = (3830.71,27.2164,-33.9974,-575.627),
+   diff = (93.8791,27.2164,-33.9974,-82.9853).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5479.17,7.96715e-10,6.89142e-10,-4081.17) vs. p_{out} = (6230.87,212.584,-232.012,-4763.83),
+   diff = (751.7,212.584,-232.012,-682.665).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1184.32,-4.07918e-14,2.0048e-14,-547.084) vs. p_{out} = (1222.48,-4.4618,34.9426,-561.777),
+   diff = (38.1677,-4.4618,34.9426,-14.693).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3058.87,-1.82841e-11,7.02827e-12,494.144) vs. p_{out} = (3474.04,-93.9163,397.583,568.144),
+   diff = (415.173,-93.9163,397.583,74).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5547.64,-4.42579e-12,-3.28715e-12,5412.16) vs. p_{out} = (6374.96,54.9811,165.612,6220.87),
+   diff = (827.319,54.9811,165.612,808.707).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2818.42,2.09583e-11,-2.47338e-11,1590.29) vs. p_{out} = (3114.92,-8.65762,124.071,1321.13),
+   diff = (296.505,-8.65762,124.071,-269.159).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5611.14,4.79335e-11,7.07491e-11,-4151.99) vs. p_{out} = (5993.93,292.22,62.7477,-3912.84),
+   diff = (382.787,292.22,62.7477,239.158).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4852.32,8.12159e-11,-1.72285e-10,1898.27) vs. p_{out} = (4852.04,-0.11723,-0.210066,1898.13),
+   diff = (-0.278738,-0.11723,-0.210066,-0.1408).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2988.13,2.77647e-11,-4.7044e-12,2113.75) vs. p_{out} = (3101.3,-94.5407,-61.3234,2124.09),
+   diff = (113.161,-94.5407,-61.3234,10.3402).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3638.04,-6.81568e-11,2.64339e-11,580.477) vs. p_{out} = (3750.4,46.6061,81.008,518.113),
+   diff = (112.355,46.6061,81.008,-62.3643).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2722.2,9.22541e-11,-2.15727e-11,1907.5) vs. p_{out} = (3354.89,-325.248,455.514,2202.49),
+   diff = (632.693,-325.248,455.514,294.993).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4777.48,5.352e-11,-4.62238e-10,717.895) vs. p_{out} = (4816.79,-17.7357,30.1643,735.801),
+   diff = (39.3073,-17.7357,30.1643,17.906).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3202.33,1.59756e-11,-7.32284e-12,-773.337) vs. p_{out} = (3791.55,47.0659,-544.911,-554.154),
+   diff = (589.224,47.0659,-544.911,219.183).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4773.28,3.85984e-12,1.47389e-12,-3544.08) vs. p_{out} = (5279.64,-398.996,287.192,-3665.41),
+   diff = (506.359,-398.996,287.192,-121.332).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5761.74,2.20712e-10,-3.57082e-10,-3137.74) vs. p_{out} = (6183.73,-156.193,164.951,-2782.12),
+   diff = (421.99,-156.193,164.951,355.627).
+Remnant_Base::TestExtract(G,9949.41): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(G,9463.85): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(G,10924): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5883.19,9.13878e-11,1.27262e-10,19.9976) vs. p_{out} = (6163.91,100.642,-171.731,-177.942),
+   diff = (280.714,100.642,-171.731,-197.939).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (945.348,8.47714e-12,7.66924e-12,261.499) vs. p_{out} = (1181.57,34.7898,-90.7138,46.187),
+   diff = (236.217,34.7898,-90.7138,-215.312).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2729.1,-38.1518,12.5718,-1847.28) vs. p_{out} = (2736.66,-38.1518,12.5718,-1854.84),
+   diff = (7.55814,3.42482e-12,-4.09095e-12,-7.55814).
+Remnant_Base::TestExtract(G,12926.9): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7126.15,2.03007e-11,-1.12319e-10,-5206.62) vs. p_{out} = (7558.37,165.757,16.4388,-5605.45),
+   diff = (432.217,165.757,16.4388,-398.831).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1858.9,-6.38862e-11,3.245e-11,-717.234) vs. p_{out} = (1976.36,112.555,-5.88108,-684.164),
+   diff = (117.46,112.555,-5.88108,33.0692).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2109.97,-1.3431e-11,-3.25573e-12,554.477) vs. p_{out} = (2937.42,99.8188,108.898,1368.64),
+   diff = (827.457,99.8188,108.898,814.164).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5245.38,9.26438e-11,3.0745e-10,2014.88) vs. p_{out} = (5490.02,97.6155,-157.358,2174.75),
+   diff = (244.641,97.6155,-157.358,159.872).
+Decay_Channel::GenerateKinematics(B+ --> K+ omega(782) pi ): Rejected decay kinematics 10000 times. This indicates a wrong maximum. Will accept kinematics.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1961.99,3.85963e-11,-2.82433e-12,1420.74) vs. p_{out} = (2578.5,-58.5436,453.778,1833.95),
+   diff = (616.514,-58.5436,453.778,413.216).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4756.98,-2.8765e-10,-1.06508e-12,331.89) vs. p_{out} = (4755.25,-0.835511,-1.26713,332.729),
+   diff = (-1.73426,-0.835511,-1.26713,0.839021).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5354.24,1.53738e-11,-8.82827e-11,3237.09) vs. p_{out} = (5781.09,-173.397,104.94,2861.43),
+   diff = (426.848,-173.397,104.94,-375.66).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2632.84,-2.01675e-11,2.34529e-11,-1059.21) vs. p_{out} = (3043.07,-261.375,-305.968,-979.497),
+   diff = (410.228,-261.375,-305.968,79.7085).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5526.48,1.83328e-11,7.42166e-11,997.009) vs. p_{out} = (6129.95,-84.3809,424.968,576.934),
+   diff = (603.474,-84.3809,424.968,-420.075).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1323.7,-3.63898e-12,-1.39133e-11,131.539) vs. p_{out} = (1499.99,60.3557,-85.3755,273.484),
+   diff = (176.296,60.3557,-85.3755,141.945).
+Remnant_Base::TestExtract(G,13594.3): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1796.66,-2.15587e-12,-4.72872e-12,-1084.79) vs. p_{out} = (2151.5,100.127,49.0842,-1421.64),
+   diff = (354.831,100.127,49.0842,-336.855).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1198,-3.29508e-11,1.57345e-11,-130.382) vs. p_{out} = (1503.11,-60.6398,-104.437,-410.569),
+   diff = (305.105,-60.6398,-104.437,-280.187).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6222.47,-2.06117e-10,2.08595e-10,-2615.68) vs. p_{out} = (6685.26,131.416,-355.04,-2881.87),
+   diff = (462.796,131.416,-355.04,-266.188).
+Remnant_Base::TestExtract(G,30375.2): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6631.92,1.2641e-11,2.92351e-11,-1758.58) vs. p_{out} = (7643.62,-371.029,46.4222,-818.511),
+   diff = (1011.71,-371.029,46.4222,940.074).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5742.36,-1.16333e-10,2.46622e-11,-1215.11) vs. p_{out} = (6727.07,47.9477,232.986,-259.566),
+   diff = (984.706,47.9477,232.986,955.544).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4534.55,5.69573e-11,-1.52017e-10,2760.43) vs. p_{out} = (5933.54,-785.877,359.123,3860.7),
+   diff = (1398.99,-785.877,359.123,1100.27).
+Remnant_Base::TestExtract(G,7955.49): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3170.02,4.93377e-12,-9.28476e-11,-1987.99) vs. p_{out} = (3200.95,-28.5273,-4.58746,-1977.93),
+   diff = (30.9383,-28.5273,-4.58746,10.0605).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6165.63,-8.85949e-12,3.49578e-10,-3105.43) vs. p_{out} = (6235.37,32.8559,-42.4004,-3150.01),
+   diff = (69.7444,32.8559,-42.4004,-44.5755).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5940.8,4.84141e-10,-1.18437e-10,-1486.14) vs. p_{out} = (6312.01,351.966,-68.6992,-1390.22),
+   diff = (371.216,351.966,-68.6992,95.924).
+Remnant_Base::TestExtract(G,6920.38): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2403.93,9.11715e-12,9.87033e-12,269.849) vs. p_{out} = (2476.74,35.2291,56.7484,240.881),
+   diff = (72.8056,35.2291,56.7484,-28.9684).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2206.71,2.14965e-12,3.54121e-12,654.219) vs. p_{out} = (2360.79,69.6639,123.559,594.062),
+   diff = (154.074,69.6639,123.559,-60.1579).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4126.05,-8.10566e-12,-2.8462e-11,-3029.6) vs. p_{out} = (4877.27,-34.0801,251.189,-3736.75),
+   diff = (751.217,-34.0801,251.189,-707.156).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2131.73,7.40582e-12,6.14914e-12,1640.56) vs. p_{out} = (2163.3,-0.594004,-17.4227,1666.88),
+   diff = (31.5674,-0.594004,-17.4227,26.3172).
+Remnant_Base::TestExtract(u,11324.6): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2933.91,-2.32619e-11,2.55561e-12,-1238.08) vs. p_{out} = (3117.9,-31.9318,104.501,-1090.06),
+   diff = (183.984,-31.9318,104.501,148.02).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3702.53,-9.91516e-11,1.02097e-10,-2440.7) vs. p_{out} = (3777.9,-3.64946,67.2759,-2406.92),
+   diff = (75.3693,-3.64946,67.2759,33.7811).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2241.99,-2.00301e-10,3.2809e-10,-385.391) vs. p_{out} = (2285.98,27.5404,23.9146,-360.795),
+   diff = (43.9924,27.5404,23.9146,24.5957).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1718.22,-1.90793e-11,-2.27462e-11,791.367) vs. p_{out} = (1990.27,-93.6465,-143.051,579.753),
+   diff = (272.055,-93.6465,-143.051,-211.614).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1043.31,-8.15493e-15,-4.70072e-14,582.898) vs. p_{out} = (1266.04,135.303,176.754,590.41),
+   diff = (222.723,135.303,176.754,7.51143).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3637.23,1.02028e-11,2.2496e-11,1717.44) vs. p_{out} = (4770.02,121.155,-278.055,626.01),
+   diff = (1132.79,121.155,-278.055,-1091.43).
+Remnant_Base::TestExtract(G,12121.2): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3718.36,-1.63418e-11,-5.34601e-11,-365.725) vs. p_{out} = (3793.48,5.87444,-54.0853,-417.523),
+   diff = (75.1184,5.87444,-54.0853,-51.7982).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6089.38,9.69091e-11,-2.1275e-11,-4831.95) vs. p_{out} = (6218.69,-95.484,-75.8425,-4788.93),
+   diff = (129.306,-95.484,-75.8425,43.0207).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5974.06,4.03953e-11,-5.43519e-12,-4575.28) vs. p_{out} = (6085.96,-67.231,36.5408,-4493.63),
+   diff = (111.901,-67.231,36.5408,81.6492).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1661.78,8.33537e-13,8.49128e-13,-1062.55) vs. p_{out} = (1698.53,0.640426,30.2073,-1041.64),
+   diff = (36.7463,0.640426,30.2073,20.9141).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (9159.84,1.77538e-10,1.55555e-10,-766.638) vs. p_{out} = (9787.94,-398.691,460.666,-919.423),
+   diff = (628.101,-398.691,460.666,-152.785).
+Remnant_Base::TestExtract(G,8470.54): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5623.43,1.86221e-10,-6.49777e-11,1078.89) vs. p_{out} = (6226.35,-516.29,48.3395,1386.48),
+   diff = (602.912,-516.29,48.3395,307.588).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5573.74,9.01568e-12,-6.08975e-11,-5316.86) vs. p_{out} = (6090.3,33.97,-61.619,-5828.6),
+   diff = (516.551,33.97,-61.619,-511.736).
+ZAlign::ZAlign(): Q = 2732.59 vs. nan, rel. diff. -nan
+ZAlign::ZAlign(): Q = 2667.48 vs. nan, rel. diff. -nan
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4142.75,1.17657e-10,3.09402e-10,395.233) vs. p_{out} = (4739.97,-142.983,85.9182,-178.225),
+   diff = (597.228,-142.983,85.9182,-573.457).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (9686.91,3.59428e-10,-2.89845e-10,765.423) vs. p_{out} = (12192.4,412.622,-1268.51,-1355.49),
+   diff = (2505.52,412.622,-1268.51,-2120.92).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6042.98,3.83169e-11,5.10014e-11,-3852.62) vs. p_{out} = (7356.67,-115.951,-630.154,-4999.47),
+   diff = (1313.69,-115.951,-630.154,-1146.84).
+Remnant_Base::TestExtract(G,14329.5): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(G,7238.16): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3286.39,1.97952e-10,4.12478e-12,1706.23) vs. p_{out} = (3291.64,1.32201,0.753443,1701.21),
+   diff = (5.24744,1.32201,0.753443,-5.02204).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (9268.86,-8.45546e-13,-5.11591e-12,3633.73) vs. p_{out} = (9269.39,0.0367611,0.0856632,3633.21),
+   diff = (0.533869,0.0367611,0.0856632,-0.525668).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3362.6,-5.11422e-11,6.28031e-12,1583.71) vs. p_{out} = (3406.67,6.63578,41.948,1595.48),
+   diff = (44.0688,6.63578,41.948,11.764).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1890.98,1.7959e-12,4.55191e-14,769.582) vs. p_{out} = (1968.94,7.00618,-76.9084,758.918),
+   diff = (77.9597,7.00618,-76.9084,-10.6645).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5975.72,-1.25512e-10,-1.04169e-11,74.0104) vs. p_{out} = (7288.41,-224.549,915.958,-839.089),
+   diff = (1312.69,-224.549,915.958,-913.1).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4231.63,5.90138e-11,1.91384e-10,515.129) vs. p_{out} = (4718.85,246.436,357.031,293.363),
+   diff = (487.219,246.436,357.031,-221.766).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2636.22,1.12236e-10,-1.13213e-10,1064.89) vs. p_{out} = (3417.64,93.1267,-127.794,1830.15),
+   diff = (781.428,93.1267,-127.794,765.262).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2637.97,1.22774e-11,-5.74814e-12,664.964) vs. p_{out} = (2764.84,-39.0437,115.456,629.719),
+   diff = (126.873,-39.0437,115.456,-35.2453).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2763.59,-1.46146e-12,1.53437e-12,-1094.71) vs. p_{out} = (3767.83,48.2639,33.5411,-2097.22),
+   diff = (1004.24,48.2639,33.5411,-1002.52).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7509.27,-7.11732e-10,3.19448e-10,-1758.51) vs. p_{out} = (7994.01,-44.4899,-466.078,-1884.06),
+   diff = (484.738,-44.4899,-466.078,-125.551).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2443.63,4.22773e-12,-9.39981e-12,1370.84) vs. p_{out} = (2562.13,72.595,-24.3852,1280.4),
+   diff = (118.502,72.595,-24.3852,-90.4326).
+Remnant_Base::TestExtract(G,225208): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Decay_Channel::GenerateKinematics(B+ --> K omega(782) pi+ pi ): Rejected decay kinematics 10000 times. This indicates a wrong maximum. Will accept kinematics.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4692.58,-7.69342e-12,4.77311e-11,-2299.06) vs. p_{out} = (5018.8,-23.2921,6.51239,-1973.74),
+   diff = (326.221,-23.2921,6.51239,325.324).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5487.68,6.57783e-12,2.7105e-11,1017.34) vs. p_{out} = (5722.53,-28.16,36.9704,1247.48),
+   diff = (234.853,-28.16,36.9704,230.14).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4920.27,2.69558e-11,1.62833e-10,2869.97) vs. p_{out} = (5137.63,-118.267,-34.1812,3049.11),
+   diff = (217.357,-118.267,-34.1812,179.133).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2716.1,-1.47197e-12,-3.18063e-11,955.362) vs. p_{out} = (2794.21,35.2075,39.5582,1012.78),
+   diff = (78.1095,35.2075,39.5582,57.4167).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1375.22,-5.15893e-13,1.50244e-11,699.918) vs. p_{out} = (1482.46,40.352,58.6068,619.686),
+   diff = (107.239,40.352,58.6068,-80.2319).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3496.81,-2.07003e-11,1.18709e-11,2827.95) vs. p_{out} = (3575.41,-17.9406,-73.8205,2807.78),
+   diff = (78.6022,-17.9406,-73.8205,-20.1738).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (11005.9,1.27305e-09,-5.02979e-11,171.408) vs. p_{out} = (10999,-3.22558,-3.25019,166.349),
+   diff = (-6.82383,-3.22558,-3.25019,-5.0593).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5286.69,5.25969e-11,2.20904e-11,-3097.52) vs. p_{out} = (5402.95,86.449,36.3812,-3028.83),
+   diff = (116.253,86.449,36.3812,68.6859).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3483.4,-6.4576e-11,2.68865e-11,751.755) vs. p_{out} = (3956.58,114.754,-320.58,1080.31),
+   diff = (473.171,114.754,-320.58,328.559).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1345.14,-9.06475e-12,1.26354e-12,201.266) vs. p_{out} = (1378.9,22.0733,-20.74,216.18),
+   diff = (33.7606,22.0733,-20.74,14.9132).
+Remnant_Base::TestExtract(G,38214.2): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6401.86,7.59562e-12,-1.4089e-10,-3469.82) vs. p_{out} = (6506.32,36.5409,-42.0487,-3381.67),
+   diff = (104.463,36.5409,-42.0487,88.1556).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4682.67,3.45186e-10,2.60004e-11,84.0774) vs. p_{out} = (4682.23,-0.120859,-0.134642,83.6836),
+   diff = (-0.433401,-0.120859,-0.134642,-0.393828).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2972.79,-3.4942e-12,-7.71034e-11,1584.18) vs. p_{out} = (3159.52,-9.34916,27.8657,1768.65),
+   diff = (186.729,-9.34916,27.8657,184.469).
+Remnant_Base::TestExtract(G,6794.87): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5836.52,-5.37004e-10,-8.21605e-11,-3257.03) vs. p_{out} = (6654.97,-293.587,-177.927,-2514.07),
+   diff = (818.442,-293.587,-177.927,742.965).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4037.75,7.363e-13,7.03437e-12,1450.9) vs. p_{out} = (4488.83,-52.2495,5.97726,1305.21),
+   diff = (451.085,-52.2495,5.97726,-145.693).
+Remnant_Base::TestExtract(G,31816.4): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6778.27,-9.98789e-10,1.2795e-09,380.233) vs. p_{out} = (6931.97,36.6585,-52.7442,519.866),
+   diff = (153.698,36.6585,-52.7442,139.633).
+Remnant_Base::TestExtract(G,13798.2): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7637.05,2.97922e-10,3.4654e-10,36.6354) vs. p_{out} = (7747.55,20.4478,13.3582,-71.1292),
+   diff = (110.498,20.4478,13.3582,-107.765).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5049.08,-3.86816e-09,-4.66176e-09,-891.645) vs. p_{out} = (5597.11,19.5476,-3.67909,-343.975),
+   diff = (548.031,19.5476,-3.67909,547.67).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1991.57,-2.41851e-12,-6.04232e-12,-636.221) vs. p_{out} = (2332.47,186.076,-178.847,-858.948),
+   diff = (340.907,186.076,-178.847,-222.727).
+Remnant_Base::TestExtract(G,20329.8): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2474.64,1.24806e-10,-2.9453e-12,291.41) vs. p_{out} = (3114.44,-500.979,-290.08,563.826),
+   diff = (639.794,-500.979,-290.08,272.416).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2930.53,132.551,198.779,240.33) vs. p_{out} = (3111.4,39.1164,51.8954,290.573),
+   diff = (180.861,-93.4345,-146.884,50.2423).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2666.7,1.09556e-11,8.94502e-12,1881.54) vs. p_{out} = (2805.46,72.2869,93.4076,1808.71),
+   diff = (138.762,72.2869,93.4076,-72.8319).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2643.08,-8.69754e-12,1.27434e-12,1994.56) vs. p_{out} = (2973.06,-58.3395,-3.26686,1669.79),
+   diff = (329.987,-58.3395,-3.26686,-324.772).
+Remnant_Base::TestExtract(G,49373.4): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6086.12,-1.63682e-10,-8.97408e-12,4915.17) vs. p_{out} = (6086.32,-0.125177,-0.00318107,4915.33),
+   diff = (0.201045,-0.125177,-0.00318107,0.157289).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3046.86,-4.99485e-11,1.0701e-10,438.283) vs. p_{out} = (3320.95,39.7604,164.492,653.892),
+   diff = (274.09,39.7604,164.492,215.609).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5133.24,-4.8651e-11,-3.3491e-11,2493.85) vs. p_{out} = (5407.99,93.5724,-250.19,2429.56),
+   diff = (274.745,93.5724,-250.19,-64.2964).
+Remnant_Base::TestExtract(u,15883.4): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (8117.7,-4.35789e-11,-1.58329e-10,-958.689) vs. p_{out} = (10765.7,205.486,78.4754,-3597.59),
+   diff = (2648.05,205.486,78.4754,-2638.9).
+Remnant_Base::TestExtract(G,15879.1): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4909.44,6.63032e-11,-3.1605e-11,-3777.04) vs. p_{out} = (6977.08,80.9808,33.1839,-5842.83),
+   diff = (2067.64,80.9808,33.1839,-2065.79).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1906.82,1.86196e-12,1.19061e-11,474.805) vs. p_{out} = (2118.32,111.211,-115.027,613.13),
+   diff = (211.502,111.211,-115.027,138.326).
+Remnant_Base::TestExtract(G,25394.3): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(G,22521.3): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(G,28497.8): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3019.32,-7.31809e-11,-1.78928e-10,-2330.18) vs. p_{out} = (3259.84,56.9613,-60.8846,-2555.79),
+   diff = (240.528,56.9613,-60.8846,-225.615).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5534,-1.95399e-14,-1.06581e-14,5200.99) vs. p_{out} = (5529.81,0.783833,0.0671945,5196.88),
+   diff = (-4.18618,0.783833,0.0671945,-4.11159).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6897.27,2.55403e-10,-1.9489e-10,1459.87) vs. p_{out} = (9141.65,403.105,-273.646,3650.72),
+   diff = (2244.37,403.105,-273.646,2190.85).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1377.13,-7.34198e-12,-2.0981e-11,-617.444) vs. p_{out} = (1475.18,-68.6268,37.2955,-676.724),
+   diff = (98.0545,-68.6268,37.2955,-59.2798).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6887.28,-6.88223e-10,-2.01644e-09,1939.59) vs. p_{out} = (7202.6,-168.383,-250.666,2030.34),
+   diff = (315.312,-168.383,-250.666,90.7505).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1003.41,4.23882e-13,-2.60799e-13,718.701) vs. p_{out} = (1083.17,-15.4991,-59.9793,668.464),
+   diff = (79.759,-15.4991,-59.9793,-50.237).
+Remnant_Base::TestExtract(G,10874.5): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1057.72,0,0,189.96) vs. p_{out} = (1117.33,-8.87315,-49.1029,222.58),
+   diff = (59.614,-8.87315,-49.1029,32.6192).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1830.91,-3.14292e-12,1.05917e-11,-564.031) vs. p_{out} = (2775.83,-634.332,201.514,-1234.77),
+   diff = (944.922,-634.332,201.514,-670.741).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6598.08,-8.70807e-10,1.43498e-10,-1976.31) vs. p_{out} = (6698.17,33.7113,7.22922,-2070.27),
+   diff = (100.091,33.7113,7.22922,-93.9649).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4567.61,-4.00835e-11,-9.79596e-11,1311.57) vs. p_{out} = (4567.85,0.13178,-0.176348,1311.67),
+   diff = (0.241456,0.13178,-0.176348,0.0991808).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2606.72,-3.3013e-11,6.77645e-11,978.366) vs. p_{out} = (2676.49,48.1116,47.4753,995.672),
+   diff = (69.7719,48.1116,47.4753,17.3057).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3756.88,1.21698e-11,5.02434e-11,246.853) vs. p_{out} = (3834.55,-38.7799,66.8002,238.676),
+   diff = (77.6724,-38.7799,66.8002,-8.17706).
+Remnant_Base::TestExtract(ub,12630.3): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3559.03,0,0,-1381.14) vs. p_{out} = (3811.08,37.73,51.8907,-1137.4),
+   diff = (252.05,37.73,51.8907,243.748).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3128.5,-1.41074e-10,-2.16505e-10,-1010.42) vs. p_{out} = (3510.66,159.126,301.258,-1183.52),
+   diff = (382.155,159.126,301.258,-173.104).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4214.79,-1.19852e-11,-2.4549e-11,3527.14) vs. p_{out} = (4355.15,-107.525,-8.9718,3437.36),
+   diff = (140.361,-107.525,-8.9718,-89.7716).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5497.95,-8.54876e-11,3.25344e-11,731.464) vs. p_{out} = (5750.55,145.193,-146.827,876.948),
+   diff = (252.596,145.193,-146.827,145.484).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1192.47,1.72973e-12,-9.7744e-13,-393.787) vs. p_{out} = (1310.8,-56.0911,46.4646,-487.04),
+   diff = (118.327,-56.0911,46.4646,-93.2533).
+Remnant_Base::TestExtract(G,13126.8): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2537.67,-1.01004e-10,5.57691e-11,-168.467) vs. p_{out} = (2783.78,186.221,5.11478,-329.299),
+   diff = (246.112,186.221,5.11478,-160.831).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1484.36,-1.22476e-12,-3.39052e-13,687.401) vs. p_{out} = (1593.1,6.59979,71.7915,768.797),
+   diff = (108.733,6.59979,71.7915,81.396).
+Remnant_Base::TestExtract(ub,8237.44): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2463.71,-3.23785e-12,-1.84812e-11,1127.82) vs. p_{out} = (2665.92,-3.20441,127.146,1285.02),
+   diff = (202.207,-3.20441,127.146,157.198).
+Remnant_Base::TestExtract(u,17382.2): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2250.74,-8.93818e-13,-2.60645e-11,-1321.26) vs. p_{out} = (3171.73,-135.971,110.391,-2225.44),
+   diff = (920.992,-135.971,110.391,-904.185).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2703.49,-8.2839e-11,8.10186e-11,-1467.23) vs. p_{out} = (2870.77,31.5936,138.939,-1554.86),
+   diff = (167.276,31.5936,138.939,-87.6292).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1189.91,-7.4607e-14,7.01661e-14,-421.043) vs. p_{out} = (1337.95,-58.2418,-54.3945,-296.288),
+   diff = (148.036,-58.2418,-54.3945,124.755).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3299.16,-2.16318e-11,7.00981e-13,2471.95) vs. p_{out} = (7391,-3.64468,-38.9839,6563.6),
+   diff = (4091.83,-3.64468,-38.9839,4091.65).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5319.19,-6.63036e-11,5.11379e-11,-3119.07) vs. p_{out} = (5877.74,-417.981,141.463,-3461.5),
+   diff = (558.55,-417.981,141.463,-342.429).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3825.64,7.71117e-11,-4.15095e-11,-612.395) vs. p_{out} = (3944.26,-82.7872,65.0723,-666.999),
+   diff = (118.616,-82.7872,65.0723,-54.6039).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4681.92,-9.67848e-12,1.05687e-11,3735.74) vs. p_{out} = (4918.49,173.377,158.008,3705.08),
+   diff = (236.572,173.377,158.008,-30.6642).
+Remnant_Base::TestExtract(d,15111): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2634.44,8.09166e-12,-4.84283e-11,2033.77) vs. p_{out} = (2919.95,-16.5166,263.909,1926.09),
+   diff = (285.509,-16.5166,263.909,-107.678).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (840.85,8.36897e-12,-2.284e-11,154.927) vs. p_{out} = (864.629,2.96047,-21.405,163.63),
+   diff = (23.7787,2.96047,-21.405,8.70302).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1929.63,4.22829e-12,-3.13686e-12,-630.821) vs. p_{out} = (2034.45,78.6276,-23.1512,-565.482),
+   diff = (104.821,78.6276,-23.1512,65.3392).
+Remnant_Base::TestExtract(G,12127.8): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(G,11387.3): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6423.21,1.71793e-10,3.7397e-10,-4.86289) vs. p_{out} = (8252.98,1426.51,-201.709,1123.16),
+   diff = (1829.76,1426.51,-201.709,1128.02).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6583.07,-3.2208e-11,-3.67315e-11,-281.355) vs. p_{out} = (8196.48,1038.47,-1234.77,-282.593),
+   diff = (1613.41,1038.47,-1234.77,-1.23789).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2483.68,1.24194e-12,-1.65e-11,2358.6) vs. p_{out} = (3300.81,2.3909e-10,2.31577e-10,1541.48),
+   diff = (817.125,2.37848e-10,2.48077e-10,-817.125).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4810.5,-2.59434e-11,-2.18059e-11,4467.34) vs. p_{out} = (4960.18,-99.2569,-6.20715,4579.2),
+   diff = (149.677,-99.2569,-6.20715,111.861).
+Remnant_Base::TestExtract(G,7314.43): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6962.05,2.08767e-10,-5.703e-10,45.9697) vs. p_{out} = (6961.96,-0.00533416,-0.0423082,45.8912),
+   diff = (-0.0892953,-0.00533416,-0.0423082,-0.0784552).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4669.4,-2.53882e-13,1.09301e-13,1727.95) vs. p_{out} = (5032.08,358.745,-42.3779,1695.69),
+   diff = (362.677,358.745,-42.3779,-32.2622).
+Remnant_Base::TestExtract(u,94770.2): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1193.87,1.13149e-12,-5.35869e-12,26.9442) vs. p_{out} = (1526.68,-81.4409,-305.179,-77.8969),
+   diff = (332.804,-81.4409,-305.179,-104.841).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1877.14,-8.80815e-12,-7.90492e-12,-343.315) vs. p_{out} = (2139.26,-46.382,-226.968,-465.963),
+   diff = (262.122,-46.382,-226.968,-122.648).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5774.32,3.15967e-11,3.13144e-13,2242.69) vs. p_{out} = (7214.27,-261.595,-117.565,1546.48),
+   diff = (1439.95,-261.595,-117.565,-696.216).
+Remnant_Base::TestExtract(G,9866.4): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(G,8038.73): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2256.34,-7.35026e-12,1.29833e-12,1771.39) vs. p_{out} = (3430.51,-84.762,25.1378,2942.23),
+   diff = (1174.17,-84.762,25.1378,1170.83).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (7704.01,-6.84786e-11,3.83867e-10,1866.3) vs. p_{out} = (10297.7,911.329,433.089,4255.73),
+   diff = (2593.74,911.329,433.089,2389.43).
+Remnant_Base::TestExtract(G,16348.1): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (9393.15,8.19109e-10,-2.09271e-09,-4.92703) vs. p_{out} = (12858.5,-358.515,142.957,3438.85),
+   diff = (3465.33,-358.515,142.957,3443.77).
+Remnant_Base::TestExtract(u,15666.7): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2470.28,-1.51768e-11,6.31958e-11,-599.687) vs. p_{out} = (2694.75,15.9619,189.864,-481.011),
+   diff = (224.471,15.9619,189.864,118.677).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3449.38,-4.74674e-13,-1.08776e-12,961.67) vs. p_{out} = (3834.8,136.676,25.9893,602.229),
+   diff = (385.426,136.676,25.9893,-359.441).
+Remnant_Base::TestExtract(G,7060.02): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4222.69,-6.00851e-11,8.74078e-11,1768.49) vs. p_{out} = (4257.09,27.0377,3.96006,1747.58),
+   diff = (34.4077,27.0377,3.96006,-20.9086).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (11128.5,-2.84127e-09,-2.31993e-09,-819.136) vs. p_{out} = (11392.8,146.514,-110.706,-1009.34),
+   diff = (264.385,146.514,-110.706,-190.203).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2355.69,-1.87355e-12,3.05209e-13,2061.02) vs. p_{out} = (3268.35,-199.824,-40.2382,2950.63),
+   diff = (912.662,-199.824,-40.2382,889.609).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5822.16,-5.36674e-11,2.20772e-11,930.449) vs. p_{out} = (6650.27,-200.025,753.169,1210.6),
+   diff = (828.103,-200.025,753.169,280.147).
+Remnant_Base::TestExtract(G,32650.4): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (5074.52,-2.10529e-11,-1.55425e-11,2136.73) vs. p_{out} = (5527.26,18.4425,-47.7472,1686.89),
+   diff = (452.744,18.4425,-47.7472,-449.842).
+Remnant_Base::TestExtract(G,7517.37): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6995.49,-3.14642e-10,-8.68249e-11,-1793.22) vs. p_{out} = (8055.87,-615.883,-326.534,-994.181),
+   diff = (1060.38,-615.883,-326.534,799.038).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (606.512,1.68779e-12,-1.3577e-12,-193.741) vs. p_{out} = (935.269,10.7924,-8.6808,134.725),
+   diff = (328.757,10.7924,-8.6808,328.465).
+Remnant_Base::TestExtract(G,32390.3): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3883.21,-7.05094e-11,7.4615e-11,2495.91) vs. p_{out} = (3883.26,-0.0249066,-0.027407,2495.95),
+   diff = (0.054691,-0.0249066,-0.027407,0.0402446).
+Decay_Channel::GenerateKinematics(B+ --> K+ omega(782) pi ): Rejected decay kinematics 10000 times. This indicates a wrong maximum. Will accept kinematics.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2454.24,1.11233e-10,1.53903e-11,-1626.94) vs. p_{out} = (2550.05,-6.46502,27.5914,-1718.36),
+   diff = (95.8108,-6.46502,27.5914,-91.4165).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2446.75,-3.97221e-12,3.67958e-12,-478.739) vs. p_{out} = (2673.7,-105.426,52.3424,-284.692),
+   diff = (226.955,-105.426,52.3424,194.047).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2694.06,-3.57884e-11,-3.92474e-12,-1373.98) vs. p_{out} = (3190.71,-79.3722,62.3726,-887.698),
+   diff = (496.652,-79.3722,62.3726,486.285).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4782.87,-4.83322e-11,1.39756e-10,-3451.76) vs. p_{out} = (4924.2,-57.8558,122.757,-3412.28),
+   diff = (141.334,-57.8558,122.757,39.4829).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1769.96,-8.32195e-12,-5.84971e-12,825.58) vs. p_{out} = (4128.97,918.367,1620.32,2273.37),
+   diff = (2359.01,918.367,1620.32,1447.79).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3706.5,6.03311e-11,-6.92428e-11,-1754) vs. p_{out} = (3842.7,67.4821,102.363,-1813.32),
+   diff = (136.203,67.4821,102.363,-59.3234).
+Remnant_Base::TestExtract(G,8272.87): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (6850.56,6.67741e-10,-1.72382e-10,-1006.5) vs. p_{out} = (8132.54,-100.056,-778.668,6.98264),
+   diff = (1281.98,-100.056,-778.668,1013.48).
+Remnant_Base::TestExtract(G,6913.49): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Remnant_Base::TestExtract(G,18217.8): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2999.98,-3.08571e-11,-2.57617e-11,-1220.73) vs. p_{out} = (3134.74,15.5585,-48.3663,-1345.55),
+   diff = (134.756,15.5585,-48.3663,-124.811).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2385.25,1.29022e-11,-1.66003e-11,1270.04) vs. p_{out} = (2458.09,51.0578,51.7904,1274.17),
+   diff = (72.8439,51.0578,51.7904,4.13325).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1884.5,-2.21527e-15,-5.11853e-13,-1010.92) vs. p_{out} = (2454.91,0.188761,43.5988,-442.184),
+   diff = (570.403,0.188761,43.5988,568.735).
+Remnant_Base::TestExtract(G,16564.4): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2086.53,-2.16493e-12,-3.31468e-12,652.082) vs. p_{out} = (2257.51,-68.2214,-153.607,620.7),
+   diff = (170.98,-68.2214,-153.607,-31.3823).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2026.62,1.86604e-13,-6.26998e-12,-942.381) vs. p_{out} = (2169.93,121.682,50.9725,-886.398),
+   diff = (143.314,121.682,50.9725,55.9834).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (3842.64,1.84452e-11,-5.82861e-11,-874.044) vs. p_{out} = (4436.82,84.9243,-37.4018,-1460.94),
+   diff = (594.183,84.9243,-37.4018,-586.892).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4068.44,5.66774e-11,1.73666e-11,1521.08) vs. p_{out} = (4201.72,55.4106,121.183,1523.75),
+   diff = (133.277,55.4106,121.183,2.67749).
+Remnant_Base::TestExtract(G,9687.41): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2003.06,2.24185e-12,5.06216e-13,1127.67) vs. p_{out} = (2637.79,-14.8699,73.006,1757.98),
+   diff = (634.731,-14.8699,73.006,630.314).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1434.45,-3.66269e-12,2.25629e-13,1016.16) vs. p_{out} = (1756.81,209.199,105.608,1237.52),
+   diff = (322.358,209.199,105.608,221.353).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2975.41,-6.39918e-12,-6.00388e-13,835.62) vs. p_{out} = (3242.8,-5.21773,92.5175,584.804),
+   diff = (267.386,-5.21773,92.5175,-250.816).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (10837.7,6.6748e-10,5.22727e-10,-1866.09) vs. p_{out} = (11330.8,115.607,-479.214,-1880.23),
+   diff = (493.164,115.607,-479.214,-14.1332).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4825.55,1.91821e-11,-5.44165e-11,-2960.7) vs. p_{out} = (4990.56,-71.0892,38.5514,-3104.54),
+   diff = (165.011,-71.0892,38.5514,-143.836).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2711.57,-4.21353e-14,-2.06876e-13,-1095.89) vs. p_{out} = (2961.52,-108.259,-19.2458,-1320.29),
+   diff = (249.959,-108.259,-19.2458,-224.406).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1896.29,6.68672e-12,1.81894e-11,954.014) vs. p_{out} = (2866.59,-77.4009,164.167,1903.77),
+   diff = (970.308,-77.4009,164.167,949.759).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4440.03,-5.7536e-11,-1.62628e-10,1101.3) vs. p_{out} = (4626.6,65.1393,-12.0163,1275.72),
+   diff = (186.574,65.1393,-12.0163,174.42).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4992.92,-2.84314e-13,-1.32702e-10,2394.89) vs. p_{out} = (4993.01,-0.0282969,-0.0194333,2394.97),
+   diff = (0.0877543,-0.0282969,-0.0194333,0.0807617).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (1949.89,1.50793e-13,4.94791e-14,866.548) vs. p_{out} = (2063.46,-101.805,-39.1318,898.214),
+   diff = (113.57,-101.805,-39.1318,31.6656).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4044.8,-5.02788e-12,-2.11651e-12,-2808.03) vs. p_{out} = (4654.94,490.227,-118.33,-3151.46),
+   diff = (610.138,490.227,-118.33,-343.431).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2393.33,-2.47079e-12,-1.53531e-12,-1256.03) vs. p_{out} = (2615.24,-105.743,67.1892,-1069.96),
+   diff = (221.91,-105.743,67.1892,186.071).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2320.13,58.5683,243.044,1164.96) vs. p_{out} = (2804.97,-153.878,494.141,2070.96),
+   diff = (484.836,-212.446,251.097,906.006).
+Remnant_Base::TestExtract(G,10529.8): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (2296.37,5.41515e-14,3.60993e-14,1977.83) vs. p_{out} = (2574.6,42.2509,13.0089,2252.52),
+   diff = (278.227,42.2509,13.0089,274.693).
+Remnant_Base::TestExtract(G,6761.16): Constituent energy out of range E_b = 6500.
+Event_Handler::IterateEventPhases(): No success after 100 trials. Request new event.
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4438.14,-1.02454e-12,1.12348e-10,-2601.17) vs. p_{out} = (4731.07,15.9754,15.5853,-2309.09),
+   diff = (292.929,15.9754,15.5853,292.077).
+Blob_List::FourMomentumConservation(): (0x7fb65061a828) Four Momentum is not conserved.
+   p_{in} = (4175.71,8.69316e-11,-5.80906e-11,-661.319) vs. p_{out} = (5465.28,186.755,-249.605,590.003),
+   diff = (1289.57,186.755,-249.605,1251.32).
+In Event_Handler::Finish : Summarizing the run may take some time.
+[1m+-------------------------------------------------------+
+|                                                       |
+|[0m  [1mTotal XS[0m is [34m[1m1.16795 pb[0m +- ( [31m0.0178713 pb = 1.53 %[0m )  [1m|
+|                                                       |
++-------------------------------------------------------+[0m
+Event_Handler::MPISync() {
+[1m  Memory usage increased by 21 MB, now 315 MB.
+[31m  This might indicate a memory leak!
+  Please monitor this process closely.
+[0m}
+In Event_Handler::Finish : Summarizing the run may take some time.
+[1m+-------------------------------------------------------+
+|                                                       |
+|[0m  [1mTotal XS[0m is [34m[1m1.16795 pb[0m +- ( [31m0.0178713 pb = 1.53 %[0m )  [1m|
+|                                                       |
++-------------------------------------------------------+[0m
+Return_Value::PrintStatistics(): Statistics {
+  Generated events: 200000
+  New events {
+    From "Beam_Remnants": 91 (209300) -> 0 %
+    From "Jet_Evolution:CSS": 196923 (670968) -> 29.3 %
+  }
+  Retried events {
+    From "Beam_Remnants": 9193 (209300) -> 4.3 %
+    From "Hadronization:Ahadic": 16 (473926) -> 0 %
+    From "Jet_Evolution:CSS": 44 (670968) -> 0 %
+  }
+  Retried phases {
+    From "Hadron_Decay_Handler::RejectExclusiveChannelsFromFragmentation": 93627 (0) -> 93627.
+  }
+  Retried methods {
+    From "Decay_Channel::GenerateKinematics": 167 (36535011) -> 0 %
+  }
+}
+------------------------------------------------------------------------
+[1mPlease cite the publications listed in '[31mSherpa_References.tex[0m[1m'.[0m
+  Extract the bibtex list by running 'get_bibtex Sherpa_References.tex'
+  or email the file to 'slaclib2@slac.stanford.edu', subject 'generate'.
+------------------------------------------------------------------------
+All_Hadron_Multiplets::~All_Hadron_Multiplets for 283 wavefunctions.
+Time: 3h 53m 35s on Mon Nov 30 18:28:06 2015
+ (User: 3h 37m 15s, System: 2m 33s, Children User: 0s, Children System: 0s)
